@@ -1,0 +1,19 @@
+{
+  "name": "serialport",
+  "version": "1.0.0",
+  "description": "Reading serial port data using NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishboro/node-serialport.git"
+  },
+  "author": "manishboro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manishboro/node-serialport/issues"
+  },
+  "homepage": "https://github.com/manishboro/node-serialport#readme"
+}
