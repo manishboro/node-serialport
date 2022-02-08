@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/manishboro/node-serialport/issues"
   },
-  "homepage": "https://github.com/manishboro/node-serialport#readme"
+  "homepage": "https://github.com/manishboro/node-serialport#readme",
+  "dependencies": {
+    "serialport": "^9.2.8"
+  }
 }
