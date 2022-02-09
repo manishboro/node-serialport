@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/manishboro/node-serialport#readme",
   "dependencies": {
+    "@serialport/parser-readline": "^9.2.4",
     "serialport": "^9.2.8"
   }
 }

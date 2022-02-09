@@ -1,4 +1,5 @@
 const SerialPort = require("serialport");
+const Readline = require("@serialport/parser-readline");
 
 const port = new SerialPort("COM1", { baudRate: 9600 });
 
@@ -13,11 +14,14 @@ port.on("open", function () {
 });
 
 // Read data that is available but keep the stream in "paused mode"
-port.on("readable", function () {
-  console.log("Data -", port.read());
-});
+// port.on("readable", function () {
+//   console.log("Data -", port.read());
+// });
 
-// Switches the port into "flowing mode"
-port.on("data", function (data) {
-  console.log("Data -", data);
-});
+// // Switches the port into "flowing mode"
+// port.on("data", function (data) {
+//   console.log("Data -", data);
+// });
+
+const parser = port.pipe(new Readline());
+parser.on("data", console.log);
